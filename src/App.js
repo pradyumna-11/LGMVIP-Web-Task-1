@@ -28,16 +28,6 @@ class App extends Component {
   };
 
   changeTodoItemCheckStatus = (id) => {
-    //const {todosList} =this.state
-    /*const todoItems = todosList.filter((each)=>each.id===id)
-    const todoObj = todoItems[0]
-    todoObj.isChecked= !todoObj.isChecked 
-    const newTodoList = todosList.forEach((each)=>{
-      if(each.id===id) {
-        each.isChecked=!each.isChecked
-      }
-      
-    })*/
     this.setState((prevState) => ({
       todosList: [
         ...prevState.todosList.map((each) => {
